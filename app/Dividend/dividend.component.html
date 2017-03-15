@@ -1,0 +1,77 @@
+
+<div style="position:relative;left:300px;background-color:#DFE2DB;width:1000px;height:1200px"><br><br>
+    <div style="text-align:center;color:blue;"><h3>Dividend Interface</h3></div>
+    <form>
+        <div style="position:relative;left:200px;top:30px">
+            <label style="color:brown">Prospectus</label><br><br>
+        </div>
+        <div style="position:relative;left:230px;top:35px">
+            <label>Select File:</label>
+            <input id="file" type="file" name=" upload your documents" (change)="onChange($event)" style="background-color:white"/>
+        </div>
+        <div style="position:relative;left:200px;top:60px">
+            <label style="color:brown">Event Details</label><br><br>
+        </div>
+        <div style="position:relative;left:230px;top:65px">
+            <label>COAF Reference:</label>
+            <input type="text" [(ngModel)]="dividend.COAF_Ref"/><br><br>
+            <label>Choice:</label>
+            <input type="text" [(ngModel)]="dividend.Choice"/><br><br>
+            <label>Information:</label> 
+            <input type="text" [(ngModel)]="dividend.Info"/><br><br>
+            <label>ISIN:</label>
+            <input type="text" [(ngModel)]="dividend.ISIN"/><br><br>
+            <label>Ex Date:</label>
+            <input type="date" [(ngModel)]="dividend.Ex_Date"/><br><br>
+            <label>Record Date:</label>
+            <input type="date" [(ngModel)]="dividend.Record_Date"/><br><br>
+        </div>
+        <div style="position:relative;left:200px;top:80px">
+            <label style="color:brown">Cash option</label><br><br>
+        </div>
+        
+        <div style="position:relative;left:230px;top:85px">
+            <label>Dividend:</label>
+            <input type="number" min="0" [(ngModel)]="cash_option.Dividend"/> &nbsp;
+            <span style="color:#B4886B;font-weight: bold;">Currency:</span>
+            <input type="text" [(ngModel)]="cash_option.Currency"/><br><br>
+            <label>Pay Date:</label>
+            <input type="date" [(ngModel)]="cash_option.Pay_Date"/><br><br>
+            <label>Response deadline Date:</label>
+            <input type="date" [(ngModel)]="cash_option.Response_Deadline_Date"/><br><br>
+            <label>Market deadline Date:</label>
+            <input type="date" [(ngModel)]="cash_option.Market_Deadline_Date"/><br><br>
+        </div>
+        <div style="position:relative;left:200px;top:110px">
+            <label style="color:brown">Security option</label><br><br>
+        </div>
+        <div style="position:relative;left:230px;top:115px">
+            <span style="color:#B4886B;font-weight: bold;">For Every
+                <input type="number" min="0" [(ngModel)]="security_option.Total_share"/>
+                share held,
+                <input type="number" min="0" [(ngModel)]="security_option.New_share"/>
+                new share.
+            </span><br><br>
+            <label >New ISIN:</label>
+            <input type="text" [(ngModel)]="security_option.New_ISIN"/><br><br>
+            <label>Price paid:</label>
+            <input type="number" min="0" [(ngModel)]="security_option.Price_paid"/> &nbsp;
+            <span style="color:#B4886B;font-weight: bold;">Currency:</span>
+            <input type="text" [(ngModel)]="security_option.Currency"/><br><br>
+            <label >Rounding:</label>
+            <input type="text" [(ngModel)]="security_option.Rounding"/><br><br>
+            <label>Pay Date:</label>
+            <input type="date" [(ngModel)]="security_option.Pay_Date"/><br><br>
+            <label>Response deadline Date:</label>
+            <input type="date" [(ngModel)]="security_option.Response_Deadline_Date"/><br><br>
+            <label>Market deadline Date:</label>
+            <input type="date" [(ngModel)]="security_option.Market_Deadline_Date"/><br><br>
+        </div>
+        <div style="position:relative;left:300px;top:130px">
+        <button class="button_2" (click)="submit()">Submit to BlockChain</button>  &nbsp;&nbsp;
+        <button class="button_2" type="reset">Reset</button>  
+    </div>
+    </form>
+    
+</div>
+<br><br>

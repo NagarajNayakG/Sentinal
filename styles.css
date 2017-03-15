@@ -1,0 +1,97 @@
+h2{
+    text-align:center;
+    color:red;
+    font-weight: bold;
+}
+
+.button {
+    background-color:#a7dd32;background-color:rgba(167,221,50,1);
+    border-color:#a7dd32;
+    border: none;
+    color: black;
+    height:50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 4px;
+    width:250px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#box{
+    position:relative;
+    left:300px;
+    top:30px;
+    background-color:#E0E8F0;
+    width:950px;
+    height:850px;
+}
+#div_1{
+    position:relative;left:200px;top:30px;
+}
+#div_2{
+    position:relative;left:235px;top:35px
+}
+
+.button_2{
+    background-color:indigo; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 4px;
+    width:200px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+body {
+    background-image: url("image/electron-blockchain.jpg");
+}
+
+label {
+color: #B4886B;
+font-weight: bold;
+display: block;
+width: 150px;
+float: left;
+}
+
+input{
+    width : 250px;
+    height: 20px;
+    border: 1px solid #555;
+    border-radius: 3px;
+}
+/*@media only screen and (max-width:976px) {
+    h2{
+        font-size:1em;
+    }
+    .button{
+         font-size: 14px;
+         width:auto;
+         height:auto;
+         float:center;
+    }
+    #box{
+        left:150px;
+        width:auto;
+         height:auto;
+    }
+
+    #div_1{
+        left:100px;
+    }
+    #div_2{
+        left:117px;
+    } 
+    label{
+        width:auto;
+        font-size:10px;  
+    }
+    input {
+        width:auto;
+        height:10px;
+    }
+}*/

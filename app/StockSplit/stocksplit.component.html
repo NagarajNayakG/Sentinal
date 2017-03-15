@@ -1,0 +1,53 @@
+
+<!--<div style="position:relative;left:300px;background-color:#DFE2DB;width:1000px;height:750px">-->
+    <div id="box"><br><br>
+        <div style="text-align:center;color:blue;"><h3>Stock Split Interface</h3></div>
+    <form>
+        <div id="div_1">
+            <label style="color:brown">Prospectus</label><br><br>
+        </div>
+        <div id="div_2">
+            <label>Select File:</label>
+            <input id="file" type="file" name=" upload your documents" (change)="onChange($event)" #name style="background-color:white"/>
+        </div>
+        <div style="position:relative;left:200px;top:60px">
+            <label style="color:brown">Event Details</label><br><br>
+        </div>
+        <div style="position:relative;left:235px;top:65px">
+            <label>COAF Reference:</label>
+            <input type="text" [(ngModel)]="stocksplit.COAF_Ref" name="COAF" id="COAF"/><br><br>
+            <label>Information:</label> 
+            <input type="text" [(ngModel)]="stocksplit.Info" name="Info"/><br><br>
+            <label>ISIN:</label>
+            <input type="text" [(ngModel)]="stocksplit.ISIN" name="ISIN"/><br><br>
+            <label>Ex Date:</label>
+            <input type="date" [(ngModel)]="stocksplit.Ex_Date" name="ex_date"/><br><br>
+            <label>Record Date:</label>
+            <input type="date" [(ngModel)]="stocksplit.Record_Date" name="rec_date"/><br><br>
+            <label>Pay Date:</label>
+            <input type="date" [(ngModel)]="stocksplit.Pay_Date" name="pay_date"/><br><br>
+            <label>Available Date:</label>
+            <input type="date" [(ngModel)]="stocksplit.Available_Date" name="avail_date"/>
+        </div>
+        <div style="position:relative;left:200px;top:100px">
+            <label style="color:brown">Split Rate</label><br><br>
+        </div>
+        <div style="position:relative;left:235px;top:105px">
+            <label>Quantity Old:</label>
+            <input type="number" min="0" [(ngModel)]="stocksplit.Split_Rate_Old" name="Split_Rate_Old"/><br><br>
+            <label>Quantity New:</label>
+            <input type="number" min="0" [(ngModel)]="stocksplit.Split_Rate_New" name="Split_Rate_New"/><br><br>
+        </div>
+        <div style="position:relative;left:200px;top:110px">
+            <label style="width:185px;">New ISIN:</label>
+            <input type="text" [(ngModel)]="stocksplit.New_ISIN" name="New_ISIN"/>
+        </div>
+        <div style="position:relative;left:300px;top:150px">
+        <button class="button_2" (click)="submit()">Submit to BlockChain</button>  &nbsp;&nbsp;
+        <button class="button_2" type="reset">Reset</button>  {{stocksplit.Available_Date}}
+    </div>
+    </form>
+    
+</div>
+<br><br>
+
